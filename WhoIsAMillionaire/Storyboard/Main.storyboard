@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yLf-mu-nLs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WhoIsAMillionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tw-2B-6Oe">
+                                <rect key="frame" x="133" y="424" width="148" height="48"/>
+                                <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ZNa-pK-cIK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <state key="normal" title="ИГРАТЬ">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ueh-XW-tIe" kind="show" identifier="goGame" id="vPp-op-up7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Кто хочет стать миллионером?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-C7-cWg">
+                                <rect key="frame" x="40" y="145" width="334" height="103"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="42"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-C9-BQf">
+                                <rect key="frame" x="133" y="499" width="148" height="48"/>
+                                <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="eZj-B6-2jO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="21"/>
+                                <state key="normal" title="РЕЗУЛЬТАТЫ">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GWb-bU-655" kind="show" id="pTf-Zm-kVv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3G-xI-otk">
+                                <rect key="frame" x="133" y="659" width="148" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="COK-Vs-NFt"/>
+                                    <constraint firstAttribute="width" constant="148" id="j66-6K-sAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                    <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CoT-YM-fuT" kind="show" identifier="goSettings" id="Rm6-XM-kR3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgN-L7-Ozg">
+                                <rect key="frame" x="133" y="577" width="148" height="46"/>
+                                <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="xM1-5c-zVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <state key="normal" title="ДОБАВИТЬ ВОПРОСЫ">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aPA-9S-2LQ" kind="show" identifier="goAddQuestion" id="3gG-pZ-bLX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="jgN-L7-Ozg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="1Wc-d2-0lL"/>
+                            <constraint firstItem="n3G-xI-otk" firstAttribute="top" secondItem="jgN-L7-Ozg" secondAttribute="bottom" constant="53" id="3gO-r3-CLg"/>
+                            <constraint firstItem="hDB-C7-cWg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="5ZV-BX-7Ju"/>
+                            <constraint firstItem="jgN-L7-Ozg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCM-b9-0cx"/>
+                            <constraint firstItem="6Tw-2B-6Oe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F84-kS-uc3"/>
+                            <constraint firstItem="6Tw-2B-6Oe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="G2f-dS-CPK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n3G-xI-otk" secondAttribute="trailing" constant="133" id="HgZ-a4-JuD"/>
+                            <constraint firstItem="hDB-C7-cWg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="IUO-cb-Ybc"/>
+                            <constraint firstItem="OWb-C9-BQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="Mme-Q1-z4W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hDB-C7-cWg" secondAttribute="trailing" constant="40" id="NC2-9J-6EI"/>
+                            <constraint firstItem="jgN-L7-Ozg" firstAttribute="top" secondItem="OWb-C9-BQf" secondAttribute="bottom" constant="30" id="Odm-n2-qNP"/>
+                            <constraint firstItem="OWb-C9-BQf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tlx-UU-egb"/>
+                            <constraint firstItem="n3G-xI-otk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="V98-gL-qSb"/>
+                            <constraint firstItem="OWb-C9-BQf" firstAttribute="top" secondItem="6Tw-2B-6Oe" secondAttribute="bottom" constant="27" id="YgI-Vc-OCT"/>
+                            <constraint firstItem="6Tw-2B-6Oe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yo5-ww-XlY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jgN-L7-Ozg" secondAttribute="trailing" constant="113" id="Zr9-98-eDq"/>
+                            <constraint firstItem="6Tw-2B-6Oe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h1X-2N-rTf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWb-C9-BQf" secondAttribute="trailing" constant="133" id="lQg-Ta-Gul"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Tw-2B-6Oe" secondAttribute="trailing" constant="133" id="slS-xI-QBu"/>
+                            <constraint firstItem="hDB-C7-cWg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u0E-Gk-2pz"/>
+                            <constraint firstItem="6Tw-2B-6Oe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wLj-3M-kkg"/>
+                            <constraint firstItem="n3G-xI-otk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zfk-RU-Xre"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mgN-Jw-zv6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Add Question View Controller-->
+        <scene sceneID="9qj-Yq-7al">
+            <objects>
+                <viewController id="aPA-9S-2LQ" customClass="AddQuestionViewController" customModule="WhoIsAMillionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XlT-7i-w3y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="311" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7K-2X-VtM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aPA-9S-2LQ" id="47c-DM-4Oe"/>
+                                    <outlet property="delegate" destination="aPA-9S-2LQ" id="RDU-I6-q8R"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFw-R5-oRi" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="20" y="778" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="dt7-xu-UPb"/>
+                                    <constraint firstAttribute="height" constant="36" id="ej4-wZ-9tJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCell:" destination="aPA-9S-2LQ" eventType="touchUpInside" id="sBJ-uP-6zd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNs-zP-dCD" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="188" y="778" width="206" height="36"/>
+                                <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="40q-BN-PXl"/>
+                                    <constraint firstAttribute="height" constant="36" id="7fb-vC-prb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Добавить вопросы">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addQuestion:" destination="aPA-9S-2LQ" eventType="touchUpInside" id="h9f-hs-e5B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XSZ-0a-JxU"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="XSZ-0a-JxU" firstAttribute="trailing" secondItem="yNs-zP-dCD" secondAttribute="trailing" constant="20" id="68u-YA-uZd"/>
+                            <constraint firstItem="yNs-zP-dCD" firstAttribute="leading" secondItem="JFw-R5-oRi" secondAttribute="trailing" constant="132" id="DhZ-Sb-tbF"/>
+                            <constraint firstItem="XSZ-0a-JxU" firstAttribute="bottom" secondItem="yNs-zP-dCD" secondAttribute="bottom" constant="48" id="KLb-UR-n6M"/>
+                            <constraint firstItem="c7K-2X-VtM" firstAttribute="trailing" secondItem="XSZ-0a-JxU" secondAttribute="trailing" id="a1e-PY-0XK"/>
+                            <constraint firstItem="c7K-2X-VtM" firstAttribute="top" secondItem="XSZ-0a-JxU" secondAttribute="top" id="bIk-mm-caA"/>
+                            <constraint firstItem="JFw-R5-oRi" firstAttribute="top" secondItem="c7K-2X-VtM" secondAttribute="bottom" constant="20" id="bhf-ca-8at"/>
+                            <constraint firstItem="XSZ-0a-JxU" firstAttribute="bottom" secondItem="JFw-R5-oRi" secondAttribute="bottom" constant="48" id="kb1-bu-Niu"/>
+                            <constraint firstItem="JFw-R5-oRi" firstAttribute="leading" secondItem="XSZ-0a-JxU" secondAttribute="leading" constant="20" id="lNg-X8-hLm"/>
+                            <constraint firstItem="yNs-zP-dCD" firstAttribute="top" secondItem="c7K-2X-VtM" secondAttribute="bottom" constant="20" id="n1h-If-NhH"/>
+                            <constraint firstItem="c7K-2X-VtM" firstAttribute="leading" secondItem="XSZ-0a-JxU" secondAttribute="leading" id="ufP-19-uGF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o5Y-CL-RhP"/>
+                    <connections>
+                        <outlet property="tableView" destination="c7K-2X-VtM" id="TzU-Dl-wsQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63a-F8-Db7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="823"/>
+        </scene>
+        <!--Настройки-->
+        <scene sceneID="Gsh-DM-KBx">
+            <objects>
+                <viewController id="CoT-YM-fuT" customClass="SettingsViewController" customModule="WhoIsAMillionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o90-lK-9MA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-R7-0tp">
+                                <rect key="frame" x="347" y="118" width="51" height="31"/>
+                                <connections>
+                                    <action selector="swithChange:" destination="CoT-YM-fuT" eventType="valueChanged" id="7GY-xJ-Mct"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Случайный порядок вопросов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-nq-6bb">
+                                <rect key="frame" x="20" y="104" width="319" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hTJ-t6-nFZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R8x-st-jAs"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="RTx-nq-6bb" firstAttribute="top" secondItem="R8x-st-jAs" secondAttribute="top" constant="16" id="3kH-CP-SMq"/>
+                            <constraint firstItem="EKB-R7-0tp" firstAttribute="leading" secondItem="RTx-nq-6bb" secondAttribute="trailing" constant="8" symbolic="YES" id="4IO-dl-wMh"/>
+                            <constraint firstItem="RTx-nq-6bb" firstAttribute="leading" secondItem="R8x-st-jAs" secondAttribute="leading" constant="20" id="6O6-Ko-ZVG"/>
+                            <constraint firstItem="EKB-R7-0tp" firstAttribute="top" secondItem="R8x-st-jAs" secondAttribute="top" constant="30" id="7UH-JX-Tts"/>
+                            <constraint firstItem="R8x-st-jAs" firstAttribute="trailing" secondItem="EKB-R7-0tp" secondAttribute="trailing" constant="18" id="FEw-Y5-Zug"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Настройки" id="oB3-vq-ZEN"/>
+                    <connections>
+                        <outlet property="switchControl" destination="EKB-R7-0tp" id="inP-zi-yYp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDS-Zo-ZeS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="1005.8035714285713"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="8gI-jk-xec">
+            <objects>
+                <viewController id="Ueh-XW-tIe" customClass="GameViewController" customModule="WhoIsAMillionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9W-fz-FJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHf-pI-IF8">
+                                <rect key="frame" x="20" y="108" width="374" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="7fF-Hc-DRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iev-Xy-RtR" userLabel="Button1" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="57" y="207" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="69N-C6-N27"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvj-Qu-Dkt" userLabel="Button2" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="57" y="267" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n5W-ig-Soa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-bA-WvN" userLabel="Button3" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="57" y="328" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5v3-si-ZqA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXt-xV-S9L" userLabel="Button4" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="57" y="388" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mxf-Kw-sIF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGw-gE-gga">
+                                <rect key="frame" x="20" y="771" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="SsF-ho-J4J"/>
+                                    <constraint firstAttribute="width" constant="374" id="zu9-XW-n7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cvD-Kt-MEC"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="ZGw-gE-gga" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="20" id="196-GI-FYk"/>
+                            <constraint firstItem="g8T-bA-WvN" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="57" id="3Rk-oM-ndR"/>
+                            <constraint firstItem="Iev-Xy-RtR" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="3t3-co-LkJ"/>
+                            <constraint firstItem="Cvj-Qu-Dkt" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="6tj-3G-cUw"/>
+                            <constraint firstItem="TXt-xV-S9L" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="Fo9-CS-EdV"/>
+                            <constraint firstItem="Cvj-Qu-Dkt" firstAttribute="top" secondItem="Iev-Xy-RtR" secondAttribute="bottom" constant="20" id="KGC-i8-IJq"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="TXt-xV-S9L" secondAttribute="trailing" constant="57" id="S9e-Sd-Ycc"/>
+                            <constraint firstItem="Iev-Xy-RtR" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="57" id="T0u-Ch-z19"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="wHf-pI-IF8" secondAttribute="trailing" constant="20" id="Ulz-Sz-y96"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="g8T-bA-WvN" secondAttribute="trailing" constant="57" id="VEO-jy-MiO"/>
+                            <constraint firstItem="ZGw-gE-gga" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="W5u-Av-5PH"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="bottom" secondItem="ZGw-gE-gga" secondAttribute="bottom" constant="45" id="ZxC-Gj-u0r"/>
+                            <constraint firstItem="g8T-bA-WvN" firstAttribute="top" secondItem="Cvj-Qu-Dkt" secondAttribute="bottom" constant="21" id="aAD-9O-ZJv"/>
+                            <constraint firstItem="Iev-Xy-RtR" firstAttribute="top" secondItem="wHf-pI-IF8" secondAttribute="bottom" constant="17" id="acl-ii-u6K"/>
+                            <constraint firstItem="TXt-xV-S9L" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="57" id="axH-2L-nAQ"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="Cvj-Qu-Dkt" secondAttribute="trailing" constant="57" id="cDC-Of-2C0"/>
+                            <constraint firstItem="wHf-pI-IF8" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="20" id="d7X-bv-39X"/>
+                            <constraint firstItem="wHf-pI-IF8" firstAttribute="top" secondItem="cvD-Kt-MEC" secondAttribute="top" constant="20" id="fUN-Pi-QUd"/>
+                            <constraint firstItem="g8T-bA-WvN" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="ib1-KB-0bg"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="ZGw-gE-gga" secondAttribute="trailing" constant="20" id="kwm-Jz-9Bh"/>
+                            <constraint firstItem="wHf-pI-IF8" firstAttribute="centerX" secondItem="m9W-fz-FJa" secondAttribute="centerX" id="w4X-xV-CnR"/>
+                            <constraint firstItem="Cvj-Qu-Dkt" firstAttribute="leading" secondItem="cvD-Kt-MEC" secondAttribute="leading" constant="57" id="z8M-MG-k9T"/>
+                            <constraint firstItem="cvD-Kt-MEC" firstAttribute="trailing" secondItem="Iev-Xy-RtR" secondAttribute="trailing" constant="57" id="zA4-JB-csx"/>
+                            <constraint firstItem="TXt-xV-S9L" firstAttribute="top" secondItem="g8T-bA-WvN" secondAttribute="bottom" constant="20" id="zQO-2L-ofF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hcM-ej-g0D"/>
+                    <connections>
+                        <outlet property="Button1" destination="Iev-Xy-RtR" id="Lrg-5j-r8B"/>
+                        <outlet property="Button2" destination="Cvj-Qu-Dkt" id="bjd-oa-SVz"/>
+                        <outlet property="Button3" destination="g8T-bA-WvN" id="qDE-FE-XGj"/>
+                        <outlet property="Button4" destination="TXt-xV-S9L" id="A6m-98-hyD"/>
+                        <outlet property="currentData" destination="ZGw-gE-gga" id="wB2-PN-V7H"/>
+                        <outlet property="textQuestion" destination="wHf-pI-IF8" id="KYW-2A-Swd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnT-gh-P5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="138.61607142857142"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="uYE-5W-Wuf">
+            <objects>
+                <tableViewController id="GWb-bU-655" customClass="ResultViewController" customModule="WhoIsAMillionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZeC-6B-2RX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="80" id="Xbn-lF-fxc" customClass="ResultCell" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xbn-lF-fxc" id="h0z-KR-HHn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtZ-6P-UhZ">
+                                            <rect key="frame" x="8" y="30" width="398" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="a6D-bl-afO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-y3-Oby">
+                                            <rect key="frame" x="8" y="11" width="398" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="fJH-00-fQD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQU-cm-9b7">
+                                            <rect key="frame" x="8" y="48" width="398" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="U8l-ur-Hst"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="uG5-y3-Oby" secondAttribute="trailing" constant="8" id="0ke-7E-7Zd"/>
+                                        <constraint firstAttribute="trailing" secondItem="TQU-cm-9b7" secondAttribute="trailing" constant="8" id="5h4-N9-gAU"/>
+                                        <constraint firstItem="TQU-cm-9b7" firstAttribute="top" secondItem="uG5-y3-Oby" secondAttribute="bottom" constant="16" id="8Zs-XH-5oI"/>
+                                        <constraint firstItem="uG5-y3-Oby" firstAttribute="leading" secondItem="h0z-KR-HHn" secondAttribute="leading" constant="8" id="Jl1-dV-kz8"/>
+                                        <constraint firstItem="ZtZ-6P-UhZ" firstAttribute="centerX" secondItem="h0z-KR-HHn" secondAttribute="centerX" id="Jwc-Fe-oez"/>
+                                        <constraint firstItem="ZtZ-6P-UhZ" firstAttribute="leading" secondItem="h0z-KR-HHn" secondAttribute="leading" constant="8" id="Q7e-kY-Vkg"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZtZ-6P-UhZ" secondAttribute="trailing" constant="8" id="REw-lh-62N"/>
+                                        <constraint firstItem="uG5-y3-Oby" firstAttribute="centerX" secondItem="h0z-KR-HHn" secondAttribute="centerX" id="Ykq-e3-vs6"/>
+                                        <constraint firstItem="uG5-y3-Oby" firstAttribute="top" secondItem="h0z-KR-HHn" secondAttribute="top" constant="11" id="aiQ-pO-6sE"/>
+                                        <constraint firstItem="ZtZ-6P-UhZ" firstAttribute="top" secondItem="h0z-KR-HHn" secondAttribute="top" constant="30" id="n2a-pA-PcJ"/>
+                                        <constraint firstItem="TQU-cm-9b7" firstAttribute="leading" secondItem="h0z-KR-HHn" secondAttribute="leading" constant="8" id="sx8-uI-8bu"/>
+                                        <constraint firstItem="TQU-cm-9b7" firstAttribute="centerX" secondItem="h0z-KR-HHn" secondAttribute="centerX" id="x3l-Zv-5b8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <outlet property="date" destination="ZtZ-6P-UhZ" id="zIb-JJ-9cI"/>
+                                    <outlet property="procent" destination="TQU-cm-9b7" id="59h-R8-6zv"/>
+                                    <outlet property="score" destination="uG5-y3-Oby" id="KUr-G3-6Us"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GWb-bU-655" id="3Po-aO-yHy"/>
+                            <outlet property="delegate" destination="GWb-bU-655" id="z5h-6N-zl9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ZX6-qr-cLW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAb-Zb-9vU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="823"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="54v-pg-PR2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLf-mu-nLs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9om-bB-QcU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="nH9-84-8Cn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NaI-Bm-BSR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiu-UW-arc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

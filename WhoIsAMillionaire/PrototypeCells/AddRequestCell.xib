@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="311" id="KGk-i7-Jjw" customClass="AddRequestCell" customModule="WhoIsAMillionaire" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="535" height="311"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ответ" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2ss-DL-PZP">
+                        <rect key="frame" x="13" y="97" width="509" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ответ" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ma3-cw-X2t">
+                        <rect key="frame" x="13" y="139" width="509" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ответ" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zz9-LH-oAD">
+                        <rect key="frame" x="13" y="181" width="509" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ответ" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DxX-MQ-6EP">
+                        <rect key="frame" x="13" y="223" width="509" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новый вопрос" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-4m-8um">
+                        <rect key="frame" x="13" y="16" width="123" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ответы на вопрос (# - перед правильным ответом)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPH-zm-Bt8">
+                        <rect key="frame" x="13" y="77" width="439" height="13.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите здесь новый вопрос" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9vh-dN-GLF">
+                        <rect key="frame" x="13" y="35" width="509" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8N-BI-Hod" customClass="buttonStyle" customModule="WhoIsAMillionaire" customModuleProvider="target">
+                        <rect key="frame" x="204" y="272" width="127" height="30"/>
+                        <color key="backgroundColor" red="0.1143108618" green="0.11917133489999999" blue="0.68586517079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="127" id="KrX-c7-hjO"/>
+                            <constraint firstAttribute="height" constant="30" id="ReM-r0-HDg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <state key="normal" title="Сохранить">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                <constraints>
+                    <constraint firstItem="Zz9-LH-oAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="3Cj-As-qrg"/>
+                    <constraint firstItem="2ss-DL-PZP" firstAttribute="top" secondItem="9vh-dN-GLF" secondAttribute="bottom" constant="28" id="4QB-Ig-VEj"/>
+                    <constraint firstAttribute="trailing" secondItem="9vh-dN-GLF" secondAttribute="trailing" constant="13" id="4g5-9E-9wF"/>
+                    <constraint firstAttribute="trailing" secondItem="2ss-DL-PZP" secondAttribute="trailing" constant="13" id="4ts-RF-QL8"/>
+                    <constraint firstItem="DxX-MQ-6EP" firstAttribute="top" secondItem="Zz9-LH-oAD" secondAttribute="bottom" constant="8" id="7dx-Oo-TqT"/>
+                    <constraint firstAttribute="bottom" secondItem="C8N-BI-Hod" secondAttribute="bottom" constant="9" id="CAX-7N-PdQ"/>
+                    <constraint firstItem="zeP-4m-8um" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Dgk-dy-KhY"/>
+                    <constraint firstItem="DxX-MQ-6EP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Dtt-JY-LlK"/>
+                    <constraint firstItem="9vh-dN-GLF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="Hmy-ab-33B"/>
+                    <constraint firstAttribute="trailing" secondItem="fPH-zm-Bt8" secondAttribute="trailing" constant="83" id="I2B-fH-zyQ"/>
+                    <constraint firstItem="9vh-dN-GLF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="I7o-iw-yXK"/>
+                    <constraint firstItem="Zz9-LH-oAD" firstAttribute="top" secondItem="ma3-cw-X2t" secondAttribute="bottom" constant="8" id="KW1-7U-W7p"/>
+                    <constraint firstItem="fPH-zm-Bt8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Ke8-TS-jjT"/>
+                    <constraint firstItem="2ss-DL-PZP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="OXT-rh-hmA"/>
+                    <constraint firstAttribute="trailing" secondItem="DxX-MQ-6EP" secondAttribute="trailing" constant="13" id="QZP-Pv-Cbr"/>
+                    <constraint firstAttribute="trailing" secondItem="Zz9-LH-oAD" secondAttribute="trailing" constant="13" id="S70-UP-M1f"/>
+                    <constraint firstItem="ma3-cw-X2t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Xlp-vT-mqd"/>
+                    <constraint firstItem="zeP-4m-8um" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="bBg-ie-mVh"/>
+                    <constraint firstAttribute="trailing" secondItem="ma3-cw-X2t" secondAttribute="trailing" constant="13" id="blB-oI-yC4"/>
+                    <constraint firstItem="fPH-zm-Bt8" firstAttribute="top" secondItem="9vh-dN-GLF" secondAttribute="bottom" constant="8" id="caS-cS-7a2"/>
+                    <constraint firstItem="ma3-cw-X2t" firstAttribute="top" secondItem="2ss-DL-PZP" secondAttribute="bottom" constant="8" id="xu9-Ox-fzQ"/>
+                    <constraint firstItem="C8N-BI-Hod" firstAttribute="top" secondItem="DxX-MQ-6EP" secondAttribute="bottom" constant="15" id="z04-tG-er9"/>
+                    <constraint firstItem="C8N-BI-Hod" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="z9Y-hk-FcZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="answer1" destination="2ss-DL-PZP" id="BRG-Ib-JyM"/>
+                <outlet property="answer2" destination="ma3-cw-X2t" id="mUC-2c-89F"/>
+                <outlet property="answer3" destination="Zz9-LH-oAD" id="cD5-rJ-JhE"/>
+                <outlet property="answer4" destination="DxX-MQ-6EP" id="tFD-qX-aK4"/>
+                <outlet property="newRequest" destination="9vh-dN-GLF" id="xxx-ID-epU"/>
+                <outlet property="saveButton" destination="C8N-BI-Hod" id="a6S-R2-PU4"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
